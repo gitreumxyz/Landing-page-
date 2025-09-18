@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitreum - Where Web3 Builds Together</title>
+    <meta name="description" content="Gitreum is the central hub for Web3 collaboration. Discover hackathons, meetups, and startup events. Build your on-chain reputation.">
+    <meta name="author" content="Gitreum">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta property="og:title" content="Gitreum - Where Web3 Builds Together">
+    <meta property="og:description" content="Gitreum is the central hub for Web3 collaboration. Discover hackathons, meetups, and startup events.">
+    <meta property="og:type" content="website">
+    
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="logo-section">
+                    <img src="gitreum-logo.png" alt="Gitreum Logo" class="logo-img">
+                    <span class="logo-text">Gitreum</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <button onclick="scrollToSection('')" class="nav-link">Home</button>
+                    <button onclick="scrollToSection('events')" class="nav-link">Events</button>
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('footer')" class="nav-link">Contact</button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <button onclick="scrollToSection('')" class="mobile-nav-link">Home</button>
+                    <button onclick="scrollToSection('events')" class="mobile-nav-link">Events</button>
+                    <button onclick="scrollToSection('about')" class="mobile-nav-link">About</button>
+                    <button onclick="scrollToSection('footer')" class="mobile-nav-link">Contact</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Animated background elements -->
+        <div class="bg-elements">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="bg-circle bg-circle-3"></div>
+        </div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <!-- Headline -->
+                <h1 class="hero-title">
+                    Where Web3 
+                    <span class="hero-accent">Builds Together</span>
+                </h1>
+
+                <!-- Sub-headline -->
+                <p class="hero-subtitle">
+                    Gitreum is the central hub for Web3 collaboration. Discover hackathons, meetups, and startup events. Build your on-chain reputation.
+                    <span class="hero-highlight">No token required.</span>
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('events')" class="btn btn-primary">
+                        Explore Upcoming Events
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </button>
+                    
+                    <button class="btn btn-secondary">
+                        <svg class="btn-icon-left" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                        Join The Community
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Next Events in <span class="text-primary">Niamey</span>
+                </h2>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event Card 1 -->
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-badge event-badge-meetup">Meetup</span>
+                        <div class="event-date">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            October 11, 2024
+                        </div>
+                    </div>
+                    <h3 class="event-title">Stacks Network Niamey Meetup</h3>
+                    <p class="event-description">
+                        Join the Stacks community in Niamey for an evening of discussions, networking, and building on Bitcoin.
+                    </p>
+                    <div class="event-location">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        Niamey, Niger
+                    </div>
+                    <button class="btn btn-primary btn-full">
+                        Learn More
+                        <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Event Card 2 -->
+                <div class="event-card">
+                    <div class="event-header">
+                        <span class="event-badge event-badge-event">Event</span>
+                        <div class="event-date">
+                            <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                            </svg>
+                            November 2024
+                        </div>
+                    </div>
+                    <h3 class="event-title">Stellar Community Event - Niamey</h3>
+                    <p class="event-description">
+                        Get ready to explore the Stellar ecosystem. Details on speakers and venue to be announced soon.
+                    </p>
+                    <div class="event-location">
+                        <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        Niamey, Niger
+                    </div>
+                    <button class="btn btn-outline btn-full">
+                        <svg class="btn-icon-left" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5-5-5h5v-5a7.5 7.5 0 01.01-1.05A5 5 0 1115 17z"></path>
+                        </svg>
+                        Get Notified
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    More Than Just an <span class="text-primary">Event Calendar</span>
+                </h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Verifiable Reputation</h3>
+                    <p class="feature-description">
+                        Build a portable profile powered by POAPs and NFT badges that prove your contributions and skills.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Multi-Chain Community</h3>
+                    <p class="feature-description">
+                        From Ethereum and Polygon to Stacks and Stellar, find your tribe and collaborate across ecosystems.
+                    </p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Focus on Building</h3>
+                    <p class="feature-description">
+                        We skip the speculation. Gitreum is designed purely to help you learn, connect, and create.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg-effects">
+            <div class="cta-bg-overlay"></div>
+            <div class="cta-bg-gradient"></div>
+        </div>
+        
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    Ready to Build Your 
+                    <span class="cta-accent">Web3 Legacy?</span>
+                </h2>
+                
+                <p class="cta-subtitle">
+                    Join our community today and be the first to know about new events and features.
+                </p>
+
+                <form class="cta-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <input 
+                            type="email" 
+                            id="email"
+                            placeholder="Enter your email for partnership opportunities"
+                            class="form-input"
+                            required
+                        >
+                        <button type="submit" class="form-submit" id="submitBtn">
+                            <svg class="submit-icon" id="submitIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                            </svg>
+                            <svg class="submit-icon check-icon" id="checkIcon" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display: none;">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Logo & Tagline -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="gitreum-logo.png" alt="Gitreum Logo" class="logo-img">
+                        <span class="logo-text">Gitreum</span>
+                    </div>
+                    <p class="footer-tagline">Where Web3 Builds Together</p>
+                    <p class="footer-copyright">© 2025 Gitreum. All rights reserved.</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="footer-section">
+                    <h3 class="footer-section-title">Navigation</h3>
+                    <ul class="footer-links">
+                        <li><button onclick="scrollToSection('')" class="footer-link">Home</button></li>
+                        <li><button onclick="scrollToSection('events')" class="footer-link">Events</button></li>
+                        <li><button onclick="scrollToSection('about')" class="footer-link">About</button></li>
+                        <li><button onclick="scrollToSection('footer')" class="footer-link">Contact</button></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links -->
+                <div class="footer-section">
+                    <h3 class="footer-section-title">Community</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="https://twitter.com/gitreum" target="_blank" rel="noopener noreferrer" class="footer-link social-link">
+                                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                                Twitter/X
+                                <svg class="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/gitreum" target="_blank" rel="noopener noreferrer" class="footer-link social-link">
+                                <svg class="social-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                                </svg>
+                                Telegram
+                                <svg class="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/gitreum" target="_blank" rel="noopener noreferrer" class="footer-link social-link">
+                                <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                                <svg class="external-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    <
